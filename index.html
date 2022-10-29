@@ -1,3 +1,38 @@
 <html>
-    <body>Hi</body>
+  <head>
+    <title>LiDAR Enhanced AR</title>
+  </head>
+  <body>
+    <h1>LiDAR Enhanced AR</h1>
+    <p>Augmented Reality is far from its nascent stages as a piece of technology.
+    Today, we have several AR headsets, glasses & even smartphones with SDKs
+    supporting AR functionality. AR requires quick computations of CNNs on
+    device in real time to identify the depth of the scene to overlay objects,
+    interfaces, etc.
+    <br /><br />
+    Most of the time, the depth information gathered after running the scene
+    through a trained CNN is still slightly inaccurate. An Evidence of this can
+    be seen in some AR games, where stationary objects in the game move around
+    the environment as we move the cameras around. Due to poor depth estimation,
+    the object is not able stay attached to the ground.
+    <br /><br />
+    Some people propose solving this issue by using a combination of Computer
+    Vision principles and CNNs. They essentially track some features in the
+    image and attach the object to those features. So, as the camera moves, the
+    features will move and the object will move with the features creating an
+    illusion that the object is stationary in virtual world. This will involve
+    even more computation.
+    <br /><br />
+    To fix this, we can directly capture Ground Truth Depth Information from the
+    Environment using LiDAR. We can then use this depth information to augment
+    the surrounding space. It'll be faster since there are much fewer CNN
+    computations required and much more accurate. The pro model of the iPhone ships with
+    a LiDAR scanner for quick, easy & precise AR overlays onto the camera
+    output. LiDAR is an acronym for Light Detection and Ranging. LiDAR sensors
+    emits light beams and measures the time it takes for the beams to reflect
+    and come back into the sensor. It then uses this measurement to create a
+    depth map. We've used LiDAR sensors already in several places for e.g. the
+    Mars Rover. This helped the robot easily identify what's in front of it and
+    make decisions about it's route accordingly.</p>
+  </body>
 </html>
